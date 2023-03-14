@@ -384,7 +384,7 @@ if __name__ == "__main__":
             print(f"[test] episodic_return={max_episodic_return}")
             writer.add_scalar("test/episodic_return_mean", avg_episodic_return, global_step)
             writer.add_scalar("test/episodic_return_max", max_episodic_return, global_step)
-            writer.add_scalar("test/episodic_length", max_episodic_return, global_step)
+            writer.add_scalar("test/episodic_length", avg_episodic_length, global_step)
 
     envs.close()
     writer.close()
