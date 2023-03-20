@@ -55,7 +55,6 @@ class CVRPVectorEnv(gym.Env):
 
         # need to revisit the first node after visited all other nodes
         self.done = (action == 0) & self.is_all_visited()
-        self.info["visited"] = self.is_all_visited()
 
         return self.state, self.reward, self.done, self.info
 
