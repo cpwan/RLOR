@@ -8,8 +8,9 @@
 
 ## News
 
+- 24/03/2023: We release our paper on [arxiv](https://arxiv.org/abs/2303.13117)!
 - 20/03/2023: We release demo and pretrained checkpoints!
-- 10/03/2023: We officially release our codebase!
+- 10/03/2023: We release our codebase!
 
 
 ## Demo
