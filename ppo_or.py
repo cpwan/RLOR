@@ -147,8 +147,10 @@ if __name__ == "__main__":
         entry_point=args.env_entry_point,
     )
 
-    # env setup
+    # training env setup
     envs = SyncVectorEnv([make_env(args.env_id, args.seed + i) for i in range(args.num_envs)])
+    # evaluation env setup: 1.) from a fix dataset, or 2.) generated with seed
+   # 1.) use test instance from a fix dataset
     test_envs = SyncVectorEnv(
         [
             make_env(
@@ -159,6 +161,11 @@ if __name__ == "__main__":
             for i in range(args.n_test)
         ]
     )
+#     # 2.) use generated evaluation instance instead
+#     import logging
+#     logging.warning('Using generated evaluation instance. For benchmarking, please download the fix dataset.')
+#     test_envs = SyncVectorEnv([make_env(args.env_id, args.seed + args.num_envs + i) for i in range(args.n_test)])
+    
     assert isinstance(
         envs.single_action_space, gym.spaces.MultiDiscrete
     ), "only discrete action space is supported"
