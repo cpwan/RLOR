@@ -1,17 +1,16 @@
 # RLOR: A Flexible Framework of Deep Reinforcement Learning for Operation Research
 
-:one: First work to incorporate end-to-end vehicle routing model in a modern RL platform (CleanRL)
+1️⃣ First work to incorporate end-to-end vehicle routing model in a modern RL platform (CleanRL)
 
-:zap: Speed up the training of Attention Model by 8 times (25hours $\to$ 3 hours)
+⚡ Speed up the training of Attention Model by 8 times (25hours --> 3 hours)
 
-:mag_right: A flexible framework for developing *model*, *algorithm*, *environment*, and *search* for operation research
+🔎 A flexible framework for developing *model*, *algorithm*, *environment*, and *search* for operation research
 
 ## News
 - 13/04/2023: We release web demo on [Hugging Face 🤗](https://huggingface.co/spaces/cpwan/RLOR-TSP)!
 - 24/03/2023: We release our paper on [arxiv](https://arxiv.org/abs/2303.13117)!
 - 20/03/2023: We release jupyter lab demo and pretrained checkpoints!
 - 10/03/2023: We release our codebase!
-
 
 ## Demo
 We provide inference demo on colab notebook:
